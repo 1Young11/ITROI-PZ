@@ -1,0 +1,43 @@
+<cinema xmlns:film="http://www.example.org/xml/films/"
+                  xmlns:ticket="http://www.example.org/xml/tickets/"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <film:film>
+        <film:movie_title>Example Movie</film:movie_title>
+        <film:duration>2 hours</film:duration>
+        <film:genre>Funny</film:genre>
+        <film:producer>Ryan Givaro</film:producer>
+        <film:release_date>2023-11-26</film:release_date>
+    </film:film>
+
+    <ticket:ticket>
+        <ticket:ticket_number>1</ticket:ticket_number>
+        <ticket:viewer>
+            <ticket:name>John</ticket:name>
+            <ticket:surname>Done</ticket:surname>
+        </ticket:viewer>
+        <ticket:seat_number>59</ticket:seat_number>
+        <ticket:purchase_date>2023-11-29</ticket:purchase_date>
+        <ticket:movie>
+            <ticket:movie_title>Example Movie</ticket:movie_title>
+            <ticket:duration>2 hours</ticket:duration>
+            <ticket:show_type>3D</ticket:show_type>
+        </ticket:movie>
+    </ticket:ticket>
+
+    <ticket:ticket>
+        <ticket:ticket_number>2</ticket:ticket_number>
+        <ticket:viewer>
+            <ticket:name>Andrew</ticket:name>
+            <ticket:surname>Wigins</ticket:surname>
+        </ticket:viewer>
+        <ticket:seat_number>32</ticket:seat_number>
+        <ticket:purchase_date>2023-11-29</ticket:purchase_date>
+        <ticket:movie>
+            <ticket:movie_title>Example Movie</ticket:movie_title>
+            <ticket:duration>2 hours</ticket:duration>
+            <ticket:show_type>3D</ticket:show_type>
+        </ticket:movie>
+    </ticket:ticket>
+
+</cinema>

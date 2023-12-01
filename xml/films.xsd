@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.example.org/xml/films/"
+            xmlns:tns="http://www.example.org/xml/films/"
+            elementFormDefault="qualified">
+
+    <xsd:complexType name="MovieType">
+        <xsd:sequence>
+            <xsd:element name="movie_title" type="xsd:string" />
+            <xsd:element name="duration" type="xsd:string" />
+            <xsd:element name="genre" type="xsd:string" />
+            <xsd:element name="producer" type="xsd:string" />
+            <xsd:element name="release_date" type="xsd:date" />
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="movie" type="tns:MovieType" />
+
+</xsd:schema>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      targetNamespace="http://www.example.org/xml/tickets/"
+      xmlns:tns="http://www.example.org/xml/tickets/"
+      elementFormDefault="qualified">
+
+  <xsd:element name="cinema" type="tns:CinemaType" />
+
+  <xsd:complexType name="CinemaType">
+    <xsd:sequence>
+      <xsd:element name="ticket" type="tns:Ticket" minOccurs="0" maxOccurs="unbounded" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="Ticket">
+    <xsd:sequence>
+      <xsd:element name="ticket_number" type="xsd:string" />
+      <xsd:element name="viewer" type="tns:ViewerType" />
+      <xsd:element name="seat_number" type="xsd:string" />
+      <xsd:element name="purchase_date" type="xsd:date" />
+      <xsd:element name="movie" type="tns:Movie" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="ViewerType">
+    <xsd:sequence>
+      <xsd:element name="name" type="xsd:string" />
+      <xsd:element name="surname" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="Movie">
+    <xsd:sequence>
+      <xsd:element name="movie_title" type="xsd:string" />
+      <xsd:element name="duration" type="xsd:string" />
+      <xsd:element name="show_type" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+</xsd:schema>
