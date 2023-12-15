@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Films xmlns="http://www.example.org/xml/entity/cinema/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.example.org/xml/entity/cinema/ Films.xsd">
+    <Film Id="1">
+        <Film_Title>Doctor Strange</Film_Title>
+        <Duration>1000</Duration>
+        <Show_Type>3D</Show_Type>
+    </Film>
+</Films>
