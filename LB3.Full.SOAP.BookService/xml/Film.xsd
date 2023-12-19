@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://film.nure.ua/entity"
+            xmlns:tns="http://film.nure.ua/entity"
+            elementFormDefault="qualified">
+
+    <xsd:include schemaLocation="Ticket.xsd"/>
+    <xsd:import schemaLocation="EntityBase.xsd" namespace="http://www.example.org/xml/entity/"/>
+
+    <xsd:complexType name="Film">
+        <xsd:complexContent>
+            <xsd:extension base="tns:EntityBase">
+                <xsd:sequence>
+                    <xsd:element name="Film_Title" type="xsd:string"/>
+                    <xsd:element name="Duration" type="xsd:string"/>
+                    <xsd:element name="Show_Type" type="xsd:string"/>
+                    <xsd:element minOccurs="0" maxOccurs="unbounded" name="Ticket" type="tns:Ticket"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+</xsd:schema>
