@@ -32,7 +32,7 @@ public class Main {
             int choise = Integer.valueOf(sc.nextLine());
             try {
                 switch (choise) {
-                    case `1 -> {
+                    case 1 -> {
                         addFilm(client, sc);
                         break;
                     }
